@@ -35,7 +35,7 @@ export const products: Product[] = [
     name: "Café Quindío",
     slug: "cafe-quindio",
     price: 16000,
-     link_whatsapp: 'https://wa.link/nysqjk',
+     link_whatsapp: 'https://www.tiendasjumbo.co/cafe-quindio-gourmet-x-250g/p',
     description:
       "Experimenta el sabor único del Café Quindío, cultivado en el corazón del Eje Cafetero de Colombia. Este café ofrece una experiencia sensorial inigualable.",
     cover: "https://elbaristacoffeeshop.com/wp-content/uploads/2018/10/cafequindio5-600x600.jpg",
@@ -48,7 +48,7 @@ export const products: Product[] = [
     name: "Café Pergamino",
     slug: "cafe-pergamino",
     price: 20000,
-     link_whatsapp: 'https://wa.link/nysqjk',
+     link_whatsapp: 'https://co.pergamino.co/',
     description:
       "Descubre el Café Pergamino, una mezcla perfecta de granos seleccionados cuidadosamente para ofrecerte una taza de café rica y balanceada, ideal para cualquier momento del día.",
     cover: "https://elbaristacoffeeshop.com/wp-content/uploads/2020/09/Bolsa-Pergamino-Web-Ibague-Tolima-500-gr-1.jpg",
@@ -61,7 +61,7 @@ export const products: Product[] = [
     name: "Café Mesa de los Santos",
     slug: "cafe-mesa-de-los-santos",
     price: 18000,
-     link_whatsapp: 'https://wa.link/nysqjk',
+     link_whatsapp: 'https://www.tiendasjumbo.co/cafe-mesa-de-los-santos-bourbon-x340g/p',
     description:
       "Prueba el Café Mesa de los Santos, cultivado con dedicación en una de las fincas más reconocidas de Colombia. Este café ofrece notas dulces y una acidez equilibrada.",
     cover: "https://elbaristacoffeeshop.com/wp-content/uploads/2020/09/cafe-bourbon-mesa-de-los-santos-340-gr.jpg",
