@@ -60,7 +60,7 @@ const product = products.find((product) => product.slug === slug) as Product;
           <div class="text-4xl font-semibold" transition:name={`${slug} price`}>
             ${product.price}
           </div>
-          <div class="text-xs text-gray-500">* This is a fictional price</div>
+          <div class="text-xs text-gray-500">* precio de venta</div>
           <a
           href={product.link_whatsapp}
             type="button"
@@ -71,12 +71,10 @@ const product = products.find((product) => product.slug === slug) as Product;
       </article>
     </div>
     <div class="py-6 md:py-20">
-      Step into a neon-lit realm where fashion meets the digital frontier. 
-      Our boutique is a portal to tomorrow's style, where code and couture collide.
-       Unleash your inner tech fashionista with attire that bridges the gap between 
-       reality and the virtual cosmos.
+        Si además de adquirir productos, te interesa que tu producto aparezca en nuestra despensa de cafés, ¡puedes usar nuestra app para subir tus productos fácilmente! Con nuestra aplicación, es sencillo agregar y gestionar tus productos para que lleguen a más clientes interesados en la calidad y el sabor único que ofreces. ¡Contáctanos hoy mismo para más información sobre cómo empezar!
+        <a href="https://wa.link/fy9ek1" class="underline ">Contactar a webcads</a>
     </div>
-    <h4 class="font-bold text-lg pb-6">You might also like</h4>
+    <h4 class="font-bold text-lg pb-6">Tambien te podria interesar</h4>
     <div class="flex flex-wrap justify-center sm:justify-normal gap-4">
       {
         products
