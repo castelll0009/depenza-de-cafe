@@ -1,0 +1,25 @@
+---
+import { type Product, products } from "../../data";
+import Layout from "../../layouts/Layout.astro";
+const { slug } = Astro.params;
+
+export function getStaticPaths() {
+  return [
+    ...products.map((product) => ({
+      params: {
+        slug: product.slug,
+      },
+    })),
+  ];
+}
+
+const product = products.find((product) => product.slug === slug) as Product;
+
+---
+  <Layout title={product.name} >
+    <h1>{product.name}</h1>
+  </Layout>
+  
+
+
+

@@ -1,1 +1,10 @@
-<h1>Products</h1>
+---
+import { products } from "../data";
+import ProductCard from "../components/ProductCard.astro"
+---
+
+<div>
+    {products.map((product) => 
+        <ProductCard {product} />
+    )}
+</div>
