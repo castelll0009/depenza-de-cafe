@@ -1,0 +1,12 @@
+---
+import type { Product } from "../data";
+
+interface Props {
+  product: Product;
+}
+
+const { product } = Astro.props;
+const transitionName = product.slug;
+---
+
+

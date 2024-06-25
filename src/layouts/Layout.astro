@@ -1,6 +1,6 @@
 ---
 import Icon from "astro-icon";
-import { ViewTransitions } from "astro:transitions";
+import {ViewTransitions} from "astro:transitions"
 interface Props {
   title: string;
   image?: string;
@@ -9,7 +9,7 @@ interface Props {
 
 const {
   title,
-  image = "/products/ryan-hoffman-A7f7XRKgUWc-unsplash.webp",
+  image = "",
   description = "A simple Shop built in Astro using View Transitions and TailwindCSS",
 } = Astro.props;
 
@@ -37,8 +37,8 @@ const imageUrl = import.meta.env.PUBLIC_URL
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="generator" content={Astro.generator} />
-    <title>{title} - Astro Transitions Shop</title>
-    <ViewTransitions />
+    <title>{title} - Astro Transitions Shop</title>  
+    <ViewTransitions ></ViewTransitions>
   </head>
   <body class="bg-gradient-to-tl via-transparent from-gray-500/5">
     <main
@@ -49,26 +49,7 @@ const imageUrl = import.meta.env.PUBLIC_URL
 
     <style is:global>
       /* libre-baskerville-latin-400-normal */
-      @font-face {
-        font-family: "Libre Baskerville";
-        font-style: normal;
-        font-display: swap;
-        font-weight: 400;
-        src:
-          url(https://cdn.jsdelivr.net/fontsource/fonts/libre-baskerville@latest/latin-400-normal.woff2)
-            format("woff2"),
-          url(https://cdn.jsdelivr.net/fontsource/fonts/libre-baskerville@latest/latin-400-normal.woff)
-            format("woff");
-        unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6,
-          U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC,
-          U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-      }
-
-      h1,
-      h4,
-      h3 {
-        font-family: "Libre Baskerville";
-      }
+     
       :root {
       }
       body {

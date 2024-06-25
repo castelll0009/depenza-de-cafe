@@ -1,27 +1,13 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import { products } from "../data";
-import ProductCard from "../components/ProductCard.astro";
-import { previousHref, previousText, tutorialHref, tutorialText, githubText, githubHref } from "../config";
+import Intro from "../components/Intro.astro"
+import Links from "../components/Links.astro"
+import Products from "../components/Products.astro"
 ---
 
 <Layout title="Shop">
-  <div>
-    <h1 class="text-5xl font-bold mb-4">Despensa de Cafés </h1>
-    <h3 class="text-xl text-gray-500 mb-8">
-      Explora una selección de los mejores cafés de Colombia y de todas sus regiones. Prueba cualquier variedad y recíbelo en la comodidad de tu hogar. También puedes publicar el café de tu tierra, de tu propia finca. </a>.
-    </h3>
+  <Intro></Intro>
+  <Links></Links>
+  <Products></Products>
     
-    <nav class="pb-10">
-      <a href={previousHref} class="text-gray-400 hover:underline hover:text-gray-950 py-8">{previousText}</a>
-      <span class="text-gray-400 mx-2">&#183;</span>
-      <a href={tutorialHref} class="text-gray-400 hover:underline hover:text-gray-950">{tutorialText}</a>
-      <span class="text-gray-400 mx-2">&#183;</span>
-      <a href={githubHref} class="text-gray-400 hover:underline hover:text-gray-950">{githubText}</a>
-    </nav>
-  </div>
-  
-  <div class="flex flex-wrap gap-4 py-8">
-    {products.map((product) => <ProductCard {product} />)}
-  </div>
 </Layout>

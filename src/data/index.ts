@@ -1,7 +1,7 @@
 export enum ProductCategory {
-  Shirts = "cafes",
-  Pants = "pants",
-  Shoes = "shoes",
+  Cafes = "cafes",
+  Categoria2 = "category2",
+ 
 }
 
 export interface Product {
@@ -28,7 +28,7 @@ export const products: Product[] = [
     cover: "https://i.ibb.co/TtrhsLS/Whats-App-Image-2024-06-23-at-03-34-25-1.jpg",
     coverCredits:
       "https://cafelab.pe/wp-content/uploads/2024/05/Namuk-coffee-cafe-arabe-1024x684.jpg",
-    category: ProductCategory.Shirts,
+    category: ProductCategory.Cafes,
   },
   {
     id: 18,
@@ -41,7 +41,7 @@ export const products: Product[] = [
     cover: "https://elbaristacoffeeshop.com/wp-content/uploads/2018/10/cafequindio5-600x600.jpg",
     coverCredits:
       "https://unsplash.com/photos/acn5ERAeSb4?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink",
-    category: ProductCategory.Shirts,
+    category: ProductCategory.Cafes,
   },
   {
     id: 21,
@@ -54,7 +54,7 @@ export const products: Product[] = [
     cover: "https://elbaristacoffeeshop.com/wp-content/uploads/2020/09/Bolsa-Pergamino-Web-Ibague-Tolima-500-gr-1.jpg",
     coverCredits:
       "https://unsplash.com/photos/Wr0TpKqf26s?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink",
-    category: ProductCategory.Shirts,
+    category: ProductCategory.Cafes,
   },
   {
     id: 49,
@@ -67,6 +67,6 @@ export const products: Product[] = [
     cover: "https://elbaristacoffeeshop.com/wp-content/uploads/2020/09/cafe-bourbon-mesa-de-los-santos-340-gr.jpg",
     coverCredits:
       "https://unsplash.com/photos/6Nub980bI3I?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink",
-    category: ProductCategory.Shirts,
+    category: ProductCategory.Cafes,
   },
 ];
