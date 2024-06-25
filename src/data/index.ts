@@ -1,5 +1,5 @@
 export enum ProductCategory {
-  Shirts = "cafes",
+  cratebox = "crate boxes",
   Pants = "pants",
   Shoes = "shoes",
 }
@@ -14,59 +14,56 @@ export interface Product {
   cover: string;
   coverCredits: string;
   category: ProductCategory;
+  units: number;
 }
 
 export const products: Product[] = [
   {
     id: 32,
-    name: "Café del Monte Orgánico",
-    slug: "cafe-del-monte-organico",
-    price: 15000,
-    link_whatsapp: 'https://wa.link/nysqjk',
-    description:
-      "Disfruta del exquisito Café del Monte Orgánico, producido en la finca de doña Berliza. Este café es reconocido como el mejor de la región de Huila, Colombia.",
-    cover: "https://i.ibb.co/TtrhsLS/Whats-App-Image-2024-06-23-at-03-34-25-1.jpg",
-    coverCredits:
-      "https://cafelab.pe/wp-content/uploads/2024/05/Namuk-coffee-cafe-arabe-1024x684.jpg",
-    category: ProductCategory.Shirts,
-  },
-  {
-    id: 18,
-    name: "Café Quindío",
-    slug: "cafe-quindio",
-    price: 16000,
-     link_whatsapp: 'https://www.tiendasjumbo.co/cafe-quindio-gourmet-x-250g/p',
-    description:
-      "Experimenta el sabor único del Café Quindío, cultivado en el corazón del Eje Cafetero de Colombia. Este café ofrece una experiencia sensorial inigualable.",
-    cover: "https://elbaristacoffeeshop.com/wp-content/uploads/2018/10/cafequindio5-600x600.jpg",
-    coverCredits:
-      "https://unsplash.com/photos/acn5ERAeSb4?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink",
-    category: ProductCategory.Shirts,
-  },
-  {
-    id: 21,
-    name: "Café Pergamino",
-    slug: "cafe-pergamino",
-    price: 20000,
-     link_whatsapp: 'https://co.pergamino.co/',
-    description:
-      "Descubre el Café Pergamino, una mezcla perfecta de granos seleccionados cuidadosamente para ofrecerte una taza de café rica y balanceada, ideal para cualquier momento del día.",
-    cover: "https://elbaristacoffeeshop.com/wp-content/uploads/2020/09/Bolsa-Pergamino-Web-Ibague-Tolima-500-gr-1.jpg",
-    coverCredits:
-      "https://unsplash.com/photos/Wr0TpKqf26s?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink",
-    category: ProductCategory.Shirts,
-  },
-  {
-    id: 49,
-    name: "Café Mesa de los Santos",
-    slug: "cafe-mesa-de-los-santos",
+    name: "S-Crate Box",
+    slug: "s-crate-box",
     price: 18000,
-     link_whatsapp: 'https://www.tiendasjumbo.co/cafe-mesa-de-los-santos-bourbon-x340g/p',
-    description:
-      "Prueba el Café Mesa de los Santos, cultivado con dedicación en una de las fincas más reconocidas de Colombia. Este café ofrece notas dulces y una acidez equilibrada.",
-    cover: "https://elbaristacoffeeshop.com/wp-content/uploads/2020/09/cafe-bourbon-mesa-de-los-santos-340-gr.jpg",
-    coverCredits:
-      "https://unsplash.com/photos/6Nub980bI3I?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink",
-    category: ProductCategory.Shirts,
+    link_whatsapp: 'https://wa.link/3n0fk2',
+    description: "Esta box es increíble, tiene lo mínimo para asegurar la diversión con un grupo de panas. Procura llevar contigo un bote de agua ><",
+    cover: "https://i.ibb.co/TtrhsLS/Whats-App-Image-2024-06-23-at-03-34-25-1.jpg",
+    coverCredits: "",
+    category: ProductCategory.cratebox,
+    units: 6,
   },
+  {
+    id: 33,
+    name: "M-Crate Box",
+    slug: "m-crate-box",
+    price: 30000,
+    link_whatsapp: 'https://wa.link/3n0fk2',
+    description: "Perfecta para una tarde inolvidable con amigos. La M-Crate Box incluye una selección equilibrada para asegurar una experiencia placentera y compartida. No olvides llevar tus snacks favoritos.",
+    cover: "https://i.ibb.co/XYZ.png", // Actualiza la URL de la imagen de la caja mediana
+    coverCredits: "",
+    category: ProductCategory.cratebox,
+    units: 9,
+  },
+  {
+    id: 34,
+    name: "XL-Crate Box",
+    slug: "xl-crate-box",
+    price: 50000,
+    link_whatsapp: 'https://wa.link/3n0fk2',
+    description: "La XL-Crate Box es ideal para grandes eventos o celebraciones. Con 50 unidades, esta caja garantiza que todos en la fiesta tengan una experiencia premium. ¡Asegúrate de tener suficiente espacio para compartir!",
+    cover: "https://i.ibb.co/XYZ.png", // Actualiza la URL de la imagen de la caja extra grande
+    coverCredits: "",
+    category: ProductCategory.cratebox,
+    units: 50,
+  },
+  {
+    id: 35,
+    name: "Max-Crate Box",
+    slug: "max-crate-box",
+    price: 100000,
+    link_whatsapp: 'https://wa.link/3n0fk2',
+    description: "Para los eventos más grandes, la Max-Crate Box es la opción definitiva. Con un máximo de 100 unidades, esta caja está diseñada para aquellos que buscan llevar su experiencia al siguiente nivel. Perfecta para festivales y grandes reuniones.",
+    cover: "https://i.ibb.co/XYZ.png", // Actualiza la URL de la imagen de la caja máxima
+    coverCredits: "",
+    category: ProductCategory.cratebox,
+    units: 100,
+  }
 ];
