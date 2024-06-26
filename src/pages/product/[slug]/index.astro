@@ -43,7 +43,7 @@ const product = products.find((product) => product.slug === slug) as Product;
           transition:name={`${slug} image`}
         />
       </div>
-      <article class="py-4 flex justify-between flex-col">
+      <article class="py-4 flex justify-between  flex-col items-right" style="align-items: flex-end;">
         <div>
           <h1 class="text-3xl sm:text-5xl font-bold animate-in">
             {product.name}
@@ -56,22 +56,24 @@ const product = products.find((product) => product.slug === slug) as Product;
             {product.description}
           </p>
         </div>
-        <div class="pt-2 sm:pt-8 text-right">
-          <div class="text-4xl font-semibold" transition:name={`${slug} price`}>
+        <div class="pt-2 sm:pt-8 text-right  ">
+
+          <div class="text-4xl font-semibold " transition:name={`${slug} price`}>
             ${product.price}
           </div>
           <div class="text-xs text-gray-500">* precio de venta</div>
-          <a
-          href={product.link_whatsapp}
-            type="button"
-            class="mt-4 px-5 py-2 bg-gray-900 hover:bg-gray-800 text-white font-semibold rounded-full"
-            >Agregar al carrito</a
-          >
+       
         </div>
+        <a
+        href={product.link_whatsapp}
+          type="button"
+          class="mt-4 px-5 w-fit  right-0 md:-mt-20  text-right mt-10 py-2 bg-gray-900 hover:bg-gray-800 text-white font-semibold rounded-full"
+          >Agregar al carrito</a
+        >
       </article>
     </div>
     <div class="py-6 md:py-20">
-        Si además de adquirir productos, te interesa que tu producto aparezca en nuestra despensa de cafés, ¡puedes usar nuestra app para subir tus productos fácilmente! Con nuestra aplicación, es sencillo agregar y gestionar tus productos para que lleguen a más clientes interesados en la calidad y el sabor único que ofreces. ¡Contáctanos hoy mismo para más información sobre cómo empezar!
+      ¡Contáctanos hoy mismo para más información sobre cómo empezar!
         <a href="https://wa.link/fy9ek1" class="underline ">Contactar a webcads</a>
     </div>
     <h4 class="font-bold text-lg pb-6">Tambien te Podria Interesar</h4>
