@@ -24,7 +24,7 @@ export const products: Product[] = [
     slug: "s-crate-box",
     price: 12000,
     link_whatsapp: 'https://wa.link/3n0fk2',
-    description: "Esta box es increíble, tiene lo mínimo para asegurar la diversión con un grupo de panas. contiene 6 unidades. Procura llevar contigo un bote de agua ><",
+    description: "Esta box es increíble, tiene lo mínimo para asegurar la diversión con un grupo de panas. contiene 6 unidades. Procura llevar contigo una botella de agua",
     cover: "/s.png",
     coverCredits: "",
     category: ProductCategory.cratebox,
