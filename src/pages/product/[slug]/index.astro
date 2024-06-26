@@ -57,16 +57,16 @@ const product = products.find((product) => product.slug === slug) as Product;
           </p>
         </div>
         <div class="pt-2 sm:pt-8 text-right">
-          <div class="text-4xl font-semibold" transition:name={`${slug} price`}>
+          <div class="text-4xl font-semibold mb-8" transition:name={`${slug} price`}>
             ${product.price}
+            <div class="text-xs text-gray-500">* precio de venta</div>
           </div>
-          <div class="text-xs text-gray-500">* precio de venta</div>
+        
           <a
           href={product.link_whatsapp}
             type="button"
             class="mt-4 px-5 py-2 bg-gray-900 hover:bg-gray-800 text-white font-semibold rounded-full"
-            >Agregar al carrito</a
-          >
+            >Agregar al carrito</a>
         </div>
       </article>
     </div>
