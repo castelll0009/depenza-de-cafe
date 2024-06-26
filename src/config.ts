@@ -5,7 +5,7 @@
 export const tutorialText = "About us";
 export const tutorialHref = "#";
 
-export const previousText = "¡Retorna la caja para obtener beneficios!";
+export const previousText = "¡Obtenga mega descuentos al Whatsapp!";
 export const previousHref = "#";
 
 export const githubText   = "otro"
