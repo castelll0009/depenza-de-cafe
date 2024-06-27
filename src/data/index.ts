@@ -24,7 +24,7 @@ export const products: Product[] = [
     slug: "s-crate-box",
     price: 12000,
     link_whatsapp: 'https://wa.link/3n0fk2',
-    description: "Esta box es increíble, tiene lo mínimo para asegurar la diversión con un grupo de panas. contiene 6 unidades. Procura llevar contigo una botella de agua",
+    description: "Esta box tiene lo mínimo para asegurar la diversión con un grupo de panas. contiene 6 unidades. Procura llevar contigo una botella de agua",
     cover: "/s.png",
     coverCredits: "",
     category: ProductCategory.cratebox,
@@ -36,7 +36,7 @@ export const products: Product[] = [
     slug: "m-crate-box",
     price: 18000,
     link_whatsapp: 'https://wa.link/3n0fk2',
-    description: "Perfecta para una tarde inolvidable con amigos. La M-Crate Box incluye una selección equilibrada para asegurar una experiencia placentera y compartida. contiene 9 unidades,  No olvides llevar tus snacks favoritos.",
+    description: "Perfecta para una tarde inolvidable con amigos. La M-Crate Box asegura una experiencia compartida. Contiene 9 unidades,  No olvides llevar tus snacks favoritos.",
     cover: "m.png", // Actualiza la URL de la imagen de la caja mediana
     coverCredits: "",
     category: ProductCategory.cratebox,
@@ -66,4 +66,4 @@ export const products: Product[] = [
     category: ProductCategory.cratebox,
     units: 100,
   }
-];
+]
