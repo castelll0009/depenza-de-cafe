@@ -37,7 +37,7 @@ export const products: Product[] = [
     price: 18000,
     link_whatsapp: 'https://wa.link/eih1a6',
     description: "Perfecta para una tarde inolvidable con amigos. La M-Crate Box asegura una experiencia compartida. Contiene 9 unidades,  No olvides llevar tus snacks favoritos.",
-    cover: "m.png", // Actualiza la URL de la imagen de la caja mediana
+    cover: "/m.png", // Actualiza la URL de la imagen de la caja mediana
     coverCredits: "",
     category: ProductCategory.cratebox,
     units: 9,
@@ -49,7 +49,7 @@ export const products: Product[] = [
     price: 100000,
     link_whatsapp: 'https://wa.link/eih1a6',
     description: "La XL-Crate Box es ideal para grandes eventos o celebraciones. Con 50 unidades, esta caja garantiza que todos en la fiesta tengan una experiencia premium. ¡Asegúrate de tener suficiente espacio para compartir!",
-    cover: "xl.png", // Actualiza la URL de la imagen de la caja extra grande
+    cover: "/xl.png", // Actualiza la URL de la imagen de la caja extra grande
     coverCredits: "",
     category: ProductCategory.cratebox,
     units: 50,
@@ -61,7 +61,7 @@ export const products: Product[] = [
     price: 200000,
     link_whatsapp: 'https://wa.link/eih1a6',
     description: "Para los eventos más grandes, la Max-Crate Box es la opción definitiva. Con un máximo de 100 unidades, esta caja está diseñada para aquellos que buscan llevar su experiencia al siguiente nivel. Perfecta para festivales y grandes reuniones.",
-    cover: "extra.png", // Actualiza la URL de la imagen de la caja máxima
+    cover: "/extra.png", // Actualiza la URL de la imagen de la caja máxima
     coverCredits: "",
     category: ProductCategory.cratebox,
     units: 100,
