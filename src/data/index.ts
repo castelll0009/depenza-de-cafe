@@ -116,8 +116,8 @@ export const products: Product[] = [
   },
   {
     id: 35,
-    name: "GUACAL",
-    slug: "Guacal-en-madera",
+    name: "HUACAL",
+    slug: "huacal-en-madera",
     price: 6000,
     link_whatsapp: 'https://wa.link/nzv300',
     description: "Guacal en madera pequeño, medidas de 30*22*8cm de fondo.",
@@ -140,7 +140,7 @@ export const products: Product[] = [
   },
   {
     id: 35,
-    name: "CAJON GUACAL",
+    name: "CAJON HUACAL",
     slug: "cajon-en-madera",
     price: 8000,
     link_whatsapp: 'https://wa.link/nzv300',
@@ -152,8 +152,8 @@ export const products: Product[] = [
   },
   {
     id: 35,
-    name: "CAJON GUACAL",
-    slug: "guacal-en-madera",
+    name: "CAJON HUACAL",
+    slug: "huacal-en-madera",
     price: 9000,
     link_whatsapp: 'https://wa.link/nzv300',
     description: "Cajon en madera tipo guacal con accesorios, medidas de 30*22*8cm de fondo.",
