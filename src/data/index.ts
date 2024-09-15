@@ -210,6 +210,8 @@ export const products: Product[] = [
     category: ProductCategory.cratebox,
     units: 1,
   },
+]
 
-  ]
+
+
   
