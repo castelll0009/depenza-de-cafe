@@ -1,24 +1,21 @@
 // src/data.ts
-export type Product = {
+
+export interface Product {
   name: string;
+  image: string;   // Asegúrate de incluir esta propiedad
   description: string;
-  image: string;
-};
+}
 
 export const products: Product[] = [
   {
-    name: "Producto 1",
-    description: "Descripción del Producto 1",
-    image: "/path/to/image1.jpg", // Asegúrate de que esta ruta sea accesible
+    name: 'Producto 1',
+    image: '/path/to/image1.jpg', // Asegúrate de que la propiedad image esté definida aquí
+    description: 'Descripción del producto 1.',
   },
   {
-    name: "Producto 2",
-    description: "Descripción del Producto 2",
-    image: "/path/to/image2.jpg", // Asegúrate de que esta ruta sea accesible
+    name: 'Producto 2',
+    image: '/path/to/image2.jpg', // Asegúrate de que la propiedad image esté definida aquí
+    description: 'Descripción del producto 2.',
   },
-  {
-    name: "Producto 3",
-    description: "Descripción del Producto 3",
-    image: "/path/to/image3.jpg", // Asegúrate de que esta ruta sea accesible
-  },
+  // Agrega más productos según sea necesario
 ];

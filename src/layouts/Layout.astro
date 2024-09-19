@@ -1,46 +1,27 @@
 ---
-import Navbar from '../components/navbar.astro';
-import { ViewTransitions } from "astro:transitions";
-import '../styles/global.css';
-
-const {
-  title = "GEPETTO POPAYAN",
-  image = "https://meek-trifle-ec6eac.netlify.app/picnic.jpeg",
-  description = "Cajas en madera para detalles y desayunos sorpresa.",
-} = Astro.props;
-
-const imageUrl = import.meta.env.PUBLIC_URL
-  ? new URL(image, import.meta.env.PUBLIC_URL)
-  : image;
+// src/layouts/Layout.astro
+const { title } = Astro.props;
 ---
+
 <!doctype html>
 <html lang="es">
   <head>
     <meta charset="UTF-8" />
-    <meta name="description" content={description} />
-    <meta property="og:title" content={title} />
-    <meta property="og:type" content="product" />
-    <meta property="og:image" content={imageUrl} />
-    <meta property="og:description" content={description} />
-    <meta name="twitter:title" content={title} />
-    <meta name="twitter:description" content={description} />
-    <meta name="twitter:image" content={imageUrl} />
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <meta name="generator" content={Astro.generator} />
-    <title>{title} - Astro Transitions Shop</title>
-    <ViewTransitions />
+    <meta name="description" content={title} />
+    <title>{title} - Mi Tienda</title>
+    <link rel="stylesheet" href="/styles/global.css" />
+    <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+
   </head>
-  <body class="bg-gradient-to-tl via-transparent from-gray-500/5">
-    <!-- Menú de navegación -->
-    <Navbar />
-    <main class="relative max-w-6xl min-h-screen mx-auto py-6 lg:pt-10 px-4 pb-20">
+  <body>
+    <header>
+      <!-- Aquí va el contenido del encabezado, como el navbar -->
+    </header>
+    <main>
       <slot />
     </main>
-    <style is:global>
-      /* Include your global styles here */
-      /* ... */
-    </style>
+    <footer>
+      <!-- Aquí va el contenido del pie de página -->
+    </footer>
   </body>
 </html>

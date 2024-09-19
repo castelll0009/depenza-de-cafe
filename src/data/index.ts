@@ -5,6 +5,7 @@ export enum ProductCategory {
 }
 
 export interface Product {
+[x: string]: string | null | undefined;
   id: number;
   name: string;
   slug: string;
