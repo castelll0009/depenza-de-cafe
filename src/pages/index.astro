@@ -15,11 +15,12 @@ const intro = 'Cajas en madera para detalles y desayunos sorpresa.';
 
     <!-- Productos -->
     <div class="flex flex-wrap gap-4 py-8">
-      {products.map((product) => <ProductCard {product} />)}
+      {products.map((product) => (
+        <ProductCard product={product} /> <!-- Se pasa correctamente el objeto product -->
+      ))}
     </div>
   </div>
 
   <!-- Agregar el ícono de WhatsApp en la parte inferior derecha -->
   <WhatsAppIcon />
 </Layout>
-
