@@ -7,21 +7,35 @@ const { title } = Astro.props;
 <html lang="es">
   <head>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /> <!-- Para diseño responsive -->
     <meta name="description" content={title} />
-    <title>{title} - Mi Tienda</title>
+    <title>{title} - Gepetto Carpintería</title>
+    <!-- Enlace a la hoja de estilo global -->
     <link rel="stylesheet" href="/styles/global.css" />
+    <!-- Icono del sitio -->
     <link rel="icon" href="/favicon.ico" type="image/x-icon" />
-
   </head>
   <body>
     <header>
-      <!-- Aquí va el contenido del encabezado, como el navbar -->
+      <!-- Menú de navegación en fila  -->
+      <nav>
+        <ul>
+          <li><a href="/">Inicio</a></li>
+          <li><a href="/productos">Productos</a></li>
+          <li><a href="/contacto">Contacto</a></li>
+        </ul>
+      </nav>
     </header>
+
     <main>
+      <!-- Contenido dinámico de cada página -->
       <slot />
     </main>
+
     <footer>
-      <!-- Aquí va el contenido del pie de página -->
+      <!-- Información del pie de página -->
+      <p>&copy; 2024 Gepetto Carpintería - Popayán, Cauca. Todos los derechos reservados.</p>
+      <p>Ubicados en la ciudad de Popayán, ofrecemos productos de carpintería de alta calidad. Contáctanos para más información.</p>
     </footer>
   </body>
 </html>
