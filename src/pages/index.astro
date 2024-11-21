@@ -3,15 +3,22 @@ import Layout from '../layouts/Layout.astro';
 import { products } from "../data";
 import ProductCard from "../components/ProductCard.astro";
 import WhatsAppIcon from "../components/WhatsAppIcon.astro";
+import { previousHref, previousText } from "../config";
 
-const title = "GEPETTO CARPINTERIA.";
+const title = "GEPETTO CARPINTERIA";
 const intro = 'Cajas en madera para detalles y desayunos sorpresa.';
 ---
 
 <Layout title={title}>
   <div>
+    <!-- Título principal -->
     <h1 class="text-5xl pb-3 font-bold mb-4">{title}</h1>
     <h3 class="text-2xl text-gray-500 mb-8">{intro}</h3>
+
+    <!-- Menú de navegación -->
+    <nav class="pb-4">
+      <a href={previousHref} class="text-[#00000087] hover:underline hover:text-gray-950 py-8">{previousText}</a>
+    </nav>
 
     <!-- Productos -->
     <div class="flex flex-wrap gap-4 py-8">
@@ -21,8 +28,6 @@ const intro = 'Cajas en madera para detalles y desayunos sorpresa.';
     </div>
   </div>
 
-
   <!-- Agregar el ícono de WhatsApp en la parte inferior derecha -->
   <WhatsAppIcon />
 </Layout>
-
